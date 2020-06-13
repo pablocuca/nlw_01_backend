@@ -3,7 +3,7 @@ import knex from "../database/connection";
 import dotenv from 'dotenv'
 
 dotenv.config();
-const baseUrl = "http://vscode.cloudns.asia:3000";
+const baseUrl = "http://192.168.0.12:3000";
 
 class ItemsConroller {
   async index(request: Request, response: Response) {
