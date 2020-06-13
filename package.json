@@ -1,0 +1,31 @@
+{
+  "name": "nlw-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+    "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+    "knex:seed": "knex --knexfile knexfile.ts seed:run",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "knex": "^0.21.1",
+    "mutter": "^1.0.1",
+    "pg": "8.2.1",
+    "sqlite3": "4.2.0"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.6",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "4.17.6",
+    "@types/multer": "^1.4.3",
+    "ts-node": "8.10.2",
+    "ts-node-dev": "1.0.0-pre.44",
+    "typescript": "3.9.3"
+  },
+  "keywords": []
+}
